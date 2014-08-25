@@ -2,20 +2,50 @@
     margin-bottom: 0 !important;
 }
 
+/* Obsolete cover photo
 
-
-#cover {
+    #cover {
     background-size: 100% auto;
     background-image: url('img/IMG_0523.jpg');
 }
+    */
 
-.mission-statement {
-    color: #EEF3E2 !important;
+
+.introBox {
+    background-color: rgba(0,0,0,.7) !important;
+    border-radius: 15px !important;
+    padding-top: 0em !important;
+    margin-top: 1em !important;
+    padding-bottom: 1em !important;
 }
 
-.jumboWell {
-    background-color: rgba(0,0,0,0.7) !important;
-    border-radius: 15px !important;
-    padding-top: 0px !important;
-    margin-top: 200px !important;
+.carousel {
+    margin-bottom: 20px !important;
+}
+
+.carousel-control {
+    bottom: 40px !important;
+    top: auto !important;
+}
+
+.main-text {
+    position: absolute;
+    top: 50px;
+    width: 99.9999999%;
+    margin-top: 10px;
+    color: white;
+}
+
+.wrapper {
+    padding-top: 5em;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+    background-color: #141414;
+    color: white;
+}
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+    color: white;
 }

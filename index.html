@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Water Coils</title>
+    <title>Hot Water Coils</title>
     <link rel="stylesheet" href="style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
@@ -65,32 +65,66 @@
     <header>
         <nav class="navbar navbar-default navbar-inverse">
             <div>
-                <a class="navbar-brand" href="/"><strong>Hot Water Coils</strong></a>
+                <!--
+                    Brand
+                    <a class="navbar-brand" href="/"><strong>Hot Water Coils</strong></a>
+                    -->
             </div>
             <ul class="nav navbar-nav pull-right">
-                <li class="active hidden-xs"><a href="/">Home</a></li>
-                <li class="hidden-xs"><a href="/">Hot Water Coils</a></li>
+                <li class="hidden-xs"><a href="/">Home</a></li>
+              <!-- <li class="hidden-xs"><a href="/">Stock Coils</a></li> -->
+                <li class="hidden-xs"><a href="/">Custom Coils</a></li> <!-- we offer a wide range of custom coils, here are your options-->
+                <li class="hidden-xs"><a href="/">Blank Drawings</a></li>
                 <li class="hidden-xs"><a href="contact.html">Contact</a></li>
+                <li class="active hidden-xs" ><a href="/">Request a Free Quote</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <!--Jumbotron--------------
-        ------------------------>
-    <div id="cover" class="jumbotron">
-        <div class="container">
-            <div class="col-md-7 well jumboWell">
-                <h1 class="mission-statement">
-                    Hot Water Coils
-                    <br />
-                    <p>High-Quality Custom Coils for Replacement and Retrofit</p>
-                </h1>
-                <button type="submit" class="btn btn-lg btn-info" data-toggle="modal" data-target="#requestQuote">Free Quote</button>
+    <!--Picture slider--------
+    ------------------------>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/CoverPhotos/hot_water_coil_copper_tubes-4.jpg" alt="...">
             </div>
-            <div class="visible-sm visible-xs"></div>
+            <div class="item">
+                <img src="img/CoverPhotos/hot_water_coil_aluminum_fins-6.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="img/CoverPhotos/hot_water_coil_manufacturing-4.jpg" alt="...">
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <div class="main-text hidden-xs">
+        <div class="col-md-6 col-md-offset-1  introBox">
+            <h1>
+                Hot Water Coils
+            </h1>
+            <h3>
+                High-Quality Custom Coils for Replacement and Retrofit
+            </h3>
+            <button type="submit" class="btn btn-lg btn-info" data-toggle="modal" data-target="#requestQuote">Free Quote</button>
         </div>
     </div>
+
+
 
 
 <!--Scaffolding----------
@@ -123,7 +157,18 @@
 
                 <h1>Your Source for Hot Water HVAC Coils</h1>
                 <p>We handle all commercial needs for heated and hot water coils.</p>
+
+
+                <!---Embedded Video
+            ------------------->
+                <div class="video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/SjQUk4BcBfc?rel=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
             </div>
+
 
 
             <!--Sizable right side text space, col-md-4-->
@@ -203,8 +248,14 @@
 
     </div>
 
-    <div class="container-fluid">
-
+<!--Footer------------
+    ------------------->
+    <div class="wrapper text-center">
+        <p>Hot Water Coils</p>
+        <div class="push"></div>
+    </div>
+    <div class="footer text-center">
+        <p>Copyright (c) 2014</p>
     </div>
 
 
