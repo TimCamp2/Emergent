@@ -41,11 +41,25 @@
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-    background-color: #141414;
+    margin: 0 auto -140px; /* the bottom margin is the negative value of the footer's height */
+    background-color: #2B2B2B;
     color: white;
+    margin-top: 1em;
 }
+
 .footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
-    color: white;
+    height: 140px; /* .push must be the same height as .footer */
+}
+
+#cover {
+    margin-bottom: 1em;
+}
+
+.centerLine {
+    border: 0 solid #8B7D6B;
+    border-right: 1px solid #8B7D6B;
+}
+
+.thumbnail {
+    max-height: 100%;
 }

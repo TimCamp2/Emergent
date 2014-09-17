@@ -3,16 +3,18 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" href="img/hot_water_booster_coil_transparent.ico">
     <title>Hot Water Coils</title>
     <link rel="stylesheet" href="style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/Font-Awesome-master/css/font-awesome.min.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
 </head>
 
 <body>
 
     <!--Request a Quote Modal----
-        --------------------------->
+        --------------------------
     <div class="modal fade" id="requestQuote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -21,30 +23,29 @@
                     <h4 class="modal-title" id="myModalLabel">Request a Free Quote</h4>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="">
                         <strong>Coil Information</strong>
                         <div class="form-group">
                             <span>Brand</span>
-                            <input class="form-control" type="text" value="" placeholder="Trane, Carrier, etc." />
+                            <input class="form-control" type="text" value="" name="brand" placeholder="Trane, Carrier, etc." />
                         </div>
                         <div class="form-group">
                             <span>Model Number</span>
-                            <input class="form-control" type="text" value="" placeholder="40TXYZ..." />
+                            <input class="form-control" type="text" value="" name="modelnumber" placeholder="40TXYZ..." />
                         </div>
                         <strong>Your Information</strong>
                         <div class="form-group">
                             <span>Name</span>
-                            <input class="form-control" type="text" value="" placeholder="John Doe.." />
+                            <input class="form-control" type="text" value="" name="name" placeholder="John Doe.." />
                         </div>
                         <div class="form-group">
                             <span>Email</span>
-                            <input class="form-control" type="text" value="" placeholder="john@gmail.com" />
+                            <input class="form-control" type="text" value="" name="email" placeholder="john@gmail.com" />
                         </div>
                         <div class="form-group">
                             <span>Phone Number</span>
-                            <input class="form-control" type="text" value="" placeholder="(555)555-5555" />
+                            <input class="form-control" type="text" value="" name="phone" placeholder="(555)555-5555" />
                         </div>
-                        <!--Document Upload Button-->
                         <div class="form-group">
                             <label for="exampleInputFile">Drawing Upload (If Applicable)</label>
                             <input type="file" id="exampleInputFile">
@@ -58,27 +59,38 @@
             </div>
         </div>
     </div>
+    -->
 
 
     <!--Navigation----------
         -------------------->
     <header>
-        <nav class="navbar navbar-default navbar-inverse">
-            <div>
-                <!--
-                    Brand
-                    <a class="navbar-brand" href="/"><strong>Hot Water Coils</strong></a>
-                    -->
-            </div>
-            <ul class="nav navbar-nav pull-right">
-                <li class="hidden-xs"><a href="/">Home</a></li>
-              <!-- <li class="hidden-xs"><a href="/">Stock Coils</a></li> -->
-                <li class="hidden-xs"><a href="/">Custom Coils</a></li> <!-- we offer a wide range of custom coils, here are your options-->
-                <li class="hidden-xs"><a href="/">Blank Drawings</a></li>
-                <li class="hidden-xs"><a href="contact.html">Contact</a></li>
-                <li class="active hidden-xs" ><a href="/">Request a Free Quote</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="img/ec.png" style="max-height: 100%"/>Hot Water Coils</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="specifications.html">Specifications</a></li>
+        <li><a href="blank drawings.html">Blank Drawings</a></li>
+        <li class="divider"></li>
+        <li><a href="contact.html">Contact</a></li>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
     </header>
 
 
@@ -95,13 +107,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="img/CoverPhotos/hot_water_coil_copper_tubes-4.jpg" alt="...">
+                <img src="img/CoverPhotos/hot_water_coil_copper_tubes-5.jpg" alt="...">
             </div>
             <div class="item">
-                <img src="img/CoverPhotos/hot_water_coil_aluminum_fins-6.jpg" alt="...">
+                <img src="img/CoverPhotos/hot_water_coil_aluminum_fins-7.jpg" alt="...">
             </div>
             <div class="item">
-                <img src="img/CoverPhotos/hot_water_coil_manufacturing-4.jpg" alt="...">
+                <img src="img/CoverPhotos/hot_water_coil_manufacturing-5.jpg" alt="...">
             </div>
         </div>
         <!-- Controls -->
@@ -115,12 +127,9 @@
     <div class="main-text hidden-xs">
         <div class="col-md-6 col-md-offset-1  introBox">
             <h1>
-                Hot Water Coils
-            </h1>
-            <h3>
                 High-Quality Custom Coils for Replacement and Retrofit
-            </h3>
-            <button type="submit" class="btn btn-lg btn-info" data-toggle="modal" data-target="#requestQuote">Free Quote</button>
+            </h1>
+            <!--<button type="submit" class="btn btn-lg btn-info" data-toggle="modal" data-target="#requestQuote">Free Quote</button>-->
         </div>
     </div>
 
@@ -135,7 +144,7 @@
             <div class="col-md-8">
 
 
-                <!--Email sign up-->
+                <!--Email sign up
                 <div class="col-md-10 col-md-offset-1">
                     <form class="form-inline" role="form">
                         <div class="well well-sm text-center">
@@ -153,20 +162,24 @@
                     </form>
                 </div>
                 <br />
-
+                    -->
 
                 <h1>Your Source for Hot Water HVAC Coils</h1>
-                <p>We handle all commercial needs for heated and hot water coils.</p>
+                <p>We handle all commercial needs for heated and hot water coils. Hot water coils are fundamental to a proper heating system. These coils are made of a series of tubes in a row-design passing through carefully crafted sheets of formed fins. Consisting of various heat exchangers used to heat air streams, these coils turn cool air passing through coils into heat from heated water passing through tubes. 
+                </br></br>
+                Hot water coils serve numerous purposes and applications, making them some of the most important coils to the successful operation of a commercial building of any size. These coils can be used for heating, preheating, comfort heating, waste heat reclamation, and fluid process heat.
+                </br></br>
+                We specialize in building custom coils for any commercial or large residential unit. No matter what your needs may be, we will be able to build the right coil unit for your needs.
+                </p>
 
 
                 <!---Embedded Video
-            ------------------->
+            -------------------->
                 <div class="video">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/SjQUk4BcBfc?rel=0" allowfullscreen></iframe>
                     </div>
                 </div>
-
             </div>
 
 
@@ -175,24 +188,28 @@
             <div class="col-md-4">
                 <div class="well">
                     <h4>
-                        <span class="glyphicon glyphicon-envelope"></span><strong> Email</strong>
-                        <br />
+                        <div class="highlight"><span class="glyphicon glyphicon-envelope"></span><strong> Email</strong></div>
                         sales@emergentcoils.com
                         <br />
                         <br />
-                        <span class="glyphicon glyphicon-earphone"></span><strong> Phone</strong>
-                        <br />
+                        <div class="highlight"><span class="glyphicon glyphicon-earphone highlight"></span><strong> Phone</strong></div>
                         855-264-5669
                         <br />
                         <br />
-                        <span class="glyphicon glyphicon-print"></span><strong> Fax</strong>
-                        <br />
+                        <div class="highlight"><span class="glyphicon glyphicon-print highlight"></span><strong> Fax</strong></div>
                         720-457-5031
                     </h4>
                 </div>
 
 
-                <!--Request a quote box-->
+                <div class="well well-lg">
+                    <h4><strong>Not sure exactly what coil will suit your needs?</strong>
+                    </br></br>
+                    No problem! We have experts on call Monday through Friday to answer your questions and locate the proper coils for your purposes. </h4>
+                </div>
+
+
+                <!--Request a quote box
                     <div class="well well-lg">
                         <form>
                             <h4><strong>Request a Free Quote</strong></h4>
@@ -230,7 +247,6 @@
                                 <span>Phone Number:</span>
                                 <input class="form-control" type="text" value="" placeholder="" />
                             </div>
-                            <!--Document Upload Button-->
                             <div class="form-group">
                                 <label for="exampleInputFile">Drawing Upload (If Applicable)</label>
                                 <input type="file" id="exampleInputFile">
@@ -241,26 +257,70 @@
                             </div>
                         </form>
                 </div>
+                                    -->
             </div>
+
         </div>
+
+
+
 
 
 
     </div>
 
 <!--Footer------------
-    ------------------->
-    <div class="wrapper text-center">
-        <p>Hot Water Coils</p>
+    -------------------->
+    <div class="wrapper">
+        <div class="col-md-2 hidden-xs"></div>
+        <div class="col-md-5 centerLine">
+        <p>Hot Water Coils is a division of Emergent Coils, LLC
+    </br>
+        Copyright © 2014 Emergent Coils, LLC. All rights reserved.</p>
+        </div>
+        <div class="col-md-3">
+        <a href="mailto:sales@emergentcoils.com"><i class="fa fa-envelope fa-3x"></i></a>
+        <a href="tel:18552645669"><i class="fa fa-phone-square fa-3x"></i></a>
+        <a href="https://www.facebook.com/EmergentCoils"><i class="fa fa-facebook-square fa-3x"></i></a>
+        <a href="https://www.linkedin.com/company/emergent-coils"><i class="fa fa-linkedin-square fa-3x"></i></a>
+        <a href="https://www.youtube.com/channel/UCMsMPt5tGGcCUDcHY6vJlxg"><i class="fa fa-youtube-square fa-3x"></i></a>
+        </div>
+        <div class="col-md-2 hidden-xs"></div>
         <div class="push"></div>
     </div>
-    <div class="footer text-center">
-        <p>Copyright (c) 2014</p>
+    <div class="footer">
+        <p>.</p>
     </div>
 
 
-    <script src="js/scripts.js"></script>
-    <script src="http://code.jquery.com/jquery.js"></script>
+
+
+<!--
+ <script type="text/javascript">
+     $(document).ready(function () {
+$("input#submit").click(function(){
+    $.ajax({
+        type: "POST",
+        url: "mailer.php", //process to mail
+        data: $('form.contact').serialize(),
+        success: function(msg){
+            $("#thanks").html(msg) //hide button and show thank you
+            $("#form-content").modal('hide'); //hide popup  
+        },
+        error: function(){
+            alert("failure");
+        }
+    });
+});
+});
+  </script>
+-->
+
+
+
+
+
+
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
